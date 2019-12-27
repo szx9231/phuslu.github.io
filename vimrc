@@ -35,7 +35,7 @@ set scrolloff=7                 " keep 3 lines when scrolling
 
 " show
 set ruler                       " show the current row and column
-"set number                      " show line numbers
+set number                      " show line numbers
 set nowrap
 set showcmd                     " display incomplete commands
 set showmode                    " display current modes
