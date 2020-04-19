@@ -35,5 +35,4 @@ if [ "${SHELL##*/}" = "bash" ]; then if [[ "xterm-256color xterm-color xterm scr
     if type -p __git_ps1; then export PS1='\[\e]0;\h:\w\a\]\n\[\e[1;32m\]\u@\h\[\e[0;33m\] \w$(__git_ps1 " (%s)") \[\e[0m[\D{%H:%M:%S}]\n\[\e[1;$((31+3*!$?))m\]\$\[\e[0m\] '; fi
 fi fi
 
-export PATH=~/.local/bin:$GOPATH/bin:$GOROOT/bin:$PATH
 
