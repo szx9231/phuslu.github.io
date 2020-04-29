@@ -14,6 +14,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias tailf='tail -F'
+alias vilog='vi `ls -t | head -n 1`'
 export LC_ALL=en_US.UTF-8
 export HISTTIMEFORMAT="%Y-%m-%d %T "
 export HISTCONTROL=ignoreboth
