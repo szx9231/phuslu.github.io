@@ -125,6 +125,7 @@ set cinoptions=(0
 set tabstop=4
 set shiftwidth=4
 set smartindent
+set expandtab
 
 set runtimepath^=~/.vim/bundle/nerdtree/
 set runtimepath^=~/.vim/bundle/ctrlp/
