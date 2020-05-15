@@ -145,7 +145,6 @@ set selectmode=mouse,key
 
 set mouse=a
 
-set tags+=/home/zhongxuan/DBK-workplace/tags
 set nocp
 filetype plugin on
 let OmniCpp_MayCompleteDot=1 
