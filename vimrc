@@ -109,3 +109,48 @@ function! XTermPasteBegin()
     return ""
 endfunction
 
+
+set number
+syntax on
+set history=2000
+
+filetype on
+set nocompatible
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set cinoptions=(0
+set tabstop=4
+set shiftwidth=4
+set smartindent
+
+set runtimepath^=~/.vim/bundle/nerdtree/
+set runtimepath^=~/.vim/bundle/ctrlp/
+set runtimepath^=~/.vim/bundle/auto-pairs/
+set runtimepath^=~/.vim/bundle/nerdcommenter/
+set runtimepath^=~/.vim/bundle/tagbar.vim/
+
+map <F3> :NERDTreeMirror<CR>
+map <F3> :NERDTreeToggle<CR>
+
+let g:AutoPairsFlyMode = 1
+
+set statusline=%<%f\ %h%m%r%=%k[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ %-14.(%l,%c%V%)\ %P
+set laststatus=2   " Always show the status line - use 2 lines for the status bar"
+
+set selection=inclusive
+set selectmode=mouse,key
+
+set mouse=a
+
+set tags+=/home/zhongxuan/DBK-workplace/tags
+set nocp
+filetype plugin on
+let OmniCpp_MayCompleteDot=1 
+let OmniCpp_MayCompleteArrow=1
+
+let g:tagbar_width=30
+map <F8> :TagbarToggle<CR>
+
